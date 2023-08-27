@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1.6fr 1fr;
     grid-template-rows: repeat(4, 1fr);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .logo {
@@ -28,4 +29,17 @@
 
 .input-container {
     display: flex;
+}
+
+.detail {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.we {
+    font-weight: 300;
 }
