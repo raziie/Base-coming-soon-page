@@ -65,12 +65,12 @@ input {
     border-radius: 20px;
     width: 350px;
     height: 40px;
+    padding-left: 30px;
 }
 
 input::placeholder {
     color: hsl(0, 36%, 90%);
     font-family: 'Josefin Sans', sans-serif;
-    padding-left: 30px;
 }
 
 .btn {
@@ -88,6 +88,14 @@ input::placeholder {
     background-image: url("./images/icon-error.svg");
     background-position: 250px 0px;
     background-repeat: no-repeat;
+}
+
+.error-msg {
+    color: hsl(0, 93%, 68%);
+    font-size: 12px;
+    text-align: left;
+    margin-left: 30px;
+    display: none;
 }
 
 @media (max-width: 600px) {
