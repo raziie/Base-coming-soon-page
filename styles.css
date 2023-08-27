@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .grid-container {
     background-image: url("./images/bg-pattern-desktop.svg");
     height: 100vh;
@@ -84,4 +88,36 @@ input::placeholder {
     background-image: url("./images/icon-error.svg");
     background-position: 250px 0px;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    .flex-container {
+        margin-left: 50px;
+        margin-right: 0px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 40px 0px 40px 50px;
+    }
+
+    .girl {
+        text-align: center;
+    }
+
+    .girl > picture > img {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 3rem;
+        letter-spacing: 15px;
+    }
 }
