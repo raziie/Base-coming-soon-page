@@ -84,18 +84,28 @@ input::placeholder {
 }
 
 .wrong {
-    border: hsl(0, 93%, 68%);
+    border: 2px solid hsl(0, 93%, 68%);
     background-image: url("./images/icon-error.svg");
-    background-position: 250px 0px;
+    background-position: 300px 10px;
     background-repeat: no-repeat;
+}
+
+.correct {
+    border: 2px solid hsl(120, 28%, 49%);
+}
+
+.msg {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .error-msg {
     color: hsl(0, 93%, 68%);
-    font-size: 12px;
-    text-align: left;
-    margin-left: 30px;
-    display: none;
+}
+
+.correct-msg {
+    color: hsl(120, 28%, 49%);
 }
 
 @media (max-width: 600px) {
@@ -127,5 +137,9 @@ input::placeholder {
     .title {
         font-size: 3rem;
         letter-spacing: 15px;
+    }
+
+    .wrong {
+        background-position: 80% 10px;
     }
 }
