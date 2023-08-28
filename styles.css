@@ -4,7 +4,8 @@ body {
 
 .grid-container {
     background-image: url("./images/bg-pattern-desktop.svg");
-    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1.6fr 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -112,7 +113,8 @@ input::placeholder {
     .grid-container {
         display: flex;
         flex-direction: column;
-        height: 130vh;
+        max-height: 130vh;
+        overflow: auto;
     }
 
     .flex-container {
